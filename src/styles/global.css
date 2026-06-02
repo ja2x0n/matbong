@@ -1,0 +1,71 @@
+:root {
+  --color-primary: #8a6a2f;
+  --color-primary-strong: #6f5423;
+  --color-gold: #b8974f;
+  --color-gold-light: #ead7a8;
+  --color-cream: #fffaf1;
+  --color-red: #9c5f3f;
+  --color-sage: #9c8758;
+  --color-sage-soft: #fbf6e8;
+  --color-teal: #8f7b51;
+  --color-teal-soft: #fff8e8;
+  --color-clay: #9c6b3f;
+  --color-clay-soft: #fbf1e7;
+  --color-plum: #8a6a2f;
+  --color-plum-soft: #f8f1dc;
+  --color-sand: #dcc894;
+  --color-sand-soft: #f8f1dc;
+  --color-ink: #2a2419;
+  --color-muted: #7b705f;
+  --color-line: #e6dcc8;
+  --color-bg: #ffffff;
+  --color-card: #ffffff;
+  --shadow-soft: none;
+  --shadow-card: none;
+  font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-ink);
+  background: var(--color-bg);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,75 @@
+.page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 86px);
+  padding: 32px 18px 72px;
+  background: #fff;
+}
+
+.panel {
+  display: grid;
+  gap: 14px;
+  width: min(520px, 100%);
+  padding: clamp(24px, 5vw, 36px);
+  border: 1px solid var(--color-line);
+  border-top: 5px solid var(--color-gold);
+  border-radius: 4px;
+  background: #fff;
+}
+
+.panel span {
+  color: #a48344;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.panel h1 {
+  margin: 0;
+  color: #3f382c;
+  font-size: clamp(32px, 5vw, 46px);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.panel p {
+  margin: 0;
+  color: #7b705f;
+  line-height: 1.6;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.form input {
+  height: 48px;
+  padding: 0 15px;
+  border: 1px solid rgba(138, 106, 47, 0.16);
+  border-radius: 4px;
+  color: #4d463b;
+  background: #fff;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: var(--color-gold);
+}
+
+.form strong {
+  color: var(--color-red);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.accountGuide {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid rgba(138, 106, 47, 0.12);
+  border-radius: 4px;
+  color: #7b705f;
+  background: #fffaf1;
+  font-size: 12px;
+}

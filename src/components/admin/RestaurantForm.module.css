@@ -1,0 +1,109 @@
+.form {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.locationSummary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(138, 106, 47, 0.12);
+  border-radius: 4px;
+  color: var(--color-primary);
+  background: #fffaf1;
+  font-size: 13px;
+}
+
+.locationSummary span {
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  border: 1px solid rgba(138, 106, 47, 0.14);
+  border-radius: 4px;
+  color: var(--color-primary);
+  background: #fff;
+  outline: none;
+}
+
+.form input,
+.form select {
+  height: 46px;
+  padding: 0 14px;
+}
+
+.form textarea {
+  min-height: 94px;
+  padding: 13px 14px;
+  resize: vertical;
+}
+
+.form fieldset {
+  padding: 0;
+  border: 0;
+}
+
+.form legend {
+  margin-bottom: 9px;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips button {
+  min-height: 38px;
+  padding: 0 12px;
+  border: 1px solid rgba(138, 106, 47, 0.12);
+  border-radius: 4px;
+  color: var(--color-primary);
+  background: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chips .active {
+  color: #fff;
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+@media (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

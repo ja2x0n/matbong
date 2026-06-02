@@ -1,0 +1,141 @@
+.card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--color-line);
+  border-left: 5px solid var(--color-gold);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  min-width: 0;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover,
+.selected {
+  border-color: var(--color-gold);
+  background: #fffdf8;
+  transform: translateY(-2px);
+}
+
+.korean {
+  border-left-color: var(--color-gold);
+}
+
+.noodles {
+  border-left-color: var(--color-gold);
+}
+
+.meat {
+  border-left-color: var(--color-gold);
+}
+
+.snack {
+  border-left-color: var(--color-gold);
+}
+
+.cafe {
+  border-left-color: var(--color-gold);
+}
+
+.topLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.category,
+.best {
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.category {
+  color: var(--color-primary);
+  background: var(--color-cream);
+}
+
+.korean .category {
+  color: var(--color-primary);
+  background: var(--color-sand-soft);
+}
+
+.noodles .category {
+  color: var(--color-primary);
+  background: #fffaf1;
+}
+
+.meat .category {
+  color: var(--color-primary);
+  background: var(--color-cream);
+}
+
+.snack .category {
+  color: var(--color-primary);
+  background: var(--color-sand-soft);
+}
+
+.best {
+  color: #fff;
+  background: var(--color-red);
+}
+
+.card h3 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: 21px;
+  font-weight: 700;
+  word-break: keep-all;
+}
+
+.card p {
+  min-height: 42px;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.meta strong {
+  color: var(--color-clay);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tags span {
+  padding: 6px 9px;
+  border-radius: 4px;
+  color: var(--color-muted);
+  background: #f4eee3;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.card a {
+  justify-self: start;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

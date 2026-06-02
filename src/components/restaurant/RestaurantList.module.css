@@ -1,0 +1,23 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
+  gap: 16px;
+  min-width: 0;
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  padding: 32px;
+  border: 1px dashed rgba(138, 106, 47, 0.2);
+  border-radius: 4px;
+  color: var(--color-muted);
+  background: rgba(255, 255, 255, 0.74);
+  text-align: center;
+}
+
+.empty strong {
+  color: var(--color-primary);
+  font-size: 20px;
+}
